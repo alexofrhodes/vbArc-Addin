@@ -8,7 +8,6 @@ Disclaimer:
 >* The file is provided free of charge and the sourcecode is unlocked. Leave attributes as found. 
 >* In the parts of code worked on by others i've left the attribution if they had one, or a weblink if I could find it.  
 Any omissions were unintentional, contact to be included.   
-I got the icons on www.flaticon.com (@TODO attribute each artist)     
   
 
 Author     : Anastasiou Alex  
