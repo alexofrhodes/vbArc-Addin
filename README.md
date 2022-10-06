@@ -1,13 +1,13 @@
-# vbArc-Addin
+I archived the separate addins page and merged them, which means mainenance and development will be faster.  
+Feedback is highly appreciated, report those bugs, make suggestions and requests or just say hi.  
+Check my other repositories [here](https://github.com/alexofrhodes/).  
 
-I brought together various addins i've built, which means mainenance and development will be faster.  
-Feedback is highly appreciated, report those bugs, make suggestions and requests or just say hi.
-  
 Disclaimer:  
 >* No guarantee is provided and no responsibility taken by the author if things don't work as expected or cause any sort of damage.  
   Always keep backups and read the code before you execute it.  
 >* The file is provided free of charge and the sourcecode is unlocked. Leave attributes as found. 
->* In the parts of code worked on by others i've left the attribution if they had one, or a weblink if I could find it.   
+>* In the parts of code worked on by others i've left the attribution if they had one, or a weblink if I could find it.  
+I got the icons on www.flaticon.com (@TODO attribute each artist)     
   Any omissions were unintentional, contact to be included.  
 
 Author     : Anastasiou Alex  
