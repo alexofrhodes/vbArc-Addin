@@ -1,6 +1,6 @@
 # vbArc-Addin
 
-I brought together the various addins i've built, which means mainenance and development will be faster.  
+I brought together various addins i've built, which means mainenance and development will be faster.  
 Feedback is highly appreciated, report those bugs, make suggestions and requests or just say hi.
   
 Disclaimer:  
