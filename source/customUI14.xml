@@ -1,0 +1,123 @@
+<customUI onLoad="vbArcRibbon_OnLoad" xmlns="http://schemas.microsoft.com/office/2009/07/customui">
+	<ribbon>
+		<tabs>
+			<tab id="tabVbArc" label="vbArc">
+				<group id="groupAdmin" label="Admin">
+					<button id="MainButtonAuthorCard" getSize="vbArcRibbon_getSize" getLabel="vbArcRibbon_getLabel" image="author" onAction="vbArcRibbon_ButtonAction" getScreentip="vbArcRibbon_getScreenTip" getSupertip="vbArcRibbon_getSuperTip"/>
+					<separator id="MainSeparator1"/>
+					<button id="MainButtonUpdate" getVisible="vbArcRibbon_getVisible" getSize="vbArcRibbon_getSize" getLabel="vbArcRibbon_getLabel" image="update" onAction="vbArcRibbon_ButtonAction" getScreentip="vbArcRibbon_getScreenTip" getSupertip="vbArcRibbon_getSuperTip"/>
+					<box id="MainAdminBox2" boxStyle="vertical">
+						<button id="MainButtonReload" getSize="vbArcRibbon_getSize" getLabel="vbArcRibbon_getLabel" image="reloadgreen" onAction="vbArcRibbon_ButtonAction" getScreentip="vbArcRibbon_getScreenTip" getSupertip="vbArcRibbon_getSuperTip"/>
+						<button id="MainButtonToggleIsAddin" getSize="vbArcRibbon_getSize" getLabel="vbArcRibbon_getLabel" image="edit" onAction="vbArcRibbon_ButtonAction" getScreentip="vbArcRibbon_getScreenTip" getSupertip="vbArcRibbon_getSuperTip"/>
+						<button id="MainButtonSave" getSize="vbArcRibbon_getSize" getLabel="vbArcRibbon_getLabel" imageMso="FileSave" onAction="vbArcRibbon_ButtonAction" getScreentip="vbArcRibbon_getScreenTip" getSupertip="vbArcRibbon_getSuperTip"/>
+					</box>
+				</group>
+				<group id="groupNavigate" label="Navigate">
+					<button id="MainFinder" getSize="vbArcRibbon_getSize" getLabel="vbArcRibbon_getLabel" image="finder" onAction="vbArcRibbon_ButtonAction" getScreentip="vbArcRibbon_getScreenTip" getSupertip="vbArcRibbon_getSuperTip"/>
+					<button id="MainFormNavigator" getSize="vbArcRibbon_getSize" getLabel="vbArcRibbon_getLabel" image="formnav" onAction="vbArcRibbon_ButtonAction" getScreentip="vbArcRibbon_getScreenTip" getSupertip="vbArcRibbon_getSuperTip"/>
+					<button id="MainWorksheetNavigator" getSize="vbArcRibbon_getSize" getLabel="vbArcRibbon_getLabel" image="sheetnav" onAction="vbArcRibbon_ButtonAction" getScreentip="vbArcRibbon_getScreenTip" getSupertip="vbArcRibbon_getSuperTip"/>
+				</group>
+				<group id="groupProject" label="Project">
+					<button id="MainProjectManager" getSize="vbArcRibbon_getSize" getLabel="vbArcRibbon_getLabel" image="project" onAction="vbArcRibbon_ButtonAction" getScreentip="vbArcRibbon_getScreenTip" getSupertip="vbArcRibbon_getSuperTip"/>
+					<button id="MainAddinsManager" getSize="vbArcRibbon_getSize" getLabel="vbArcRibbon_getLabel" image="jigsaw" onAction="vbArcRibbon_ButtonAction" getScreentip="vbArcRibbon_getScreenTip" getSupertip="vbArcRibbon_getSuperTip"/>
+					<!-- <separator id="MainSeparator4"/>       -->
+					<button id="MainSnippetsWorkbook" getSize="vbArcRibbon_getSize" getLabel="vbArcRibbon_getLabel" image="layers" onAction="vbArcRibbon_ButtonAction" getScreentip="vbArcRibbon_getScreenTip" getSupertip="vbArcRibbon_getSuperTip"/>
+					<button id="MainXray" getSize="vbArcRibbon_getSize" getLabel="vbArcRibbon_getLabel" image="xray" onAction="vbArcRibbon_ButtonAction" getScreentip="vbArcRibbon_getScreenTip" getSupertip="vbArcRibbon_getSuperTip"/>
+				</group>
+				<group id="groupTools" label="Tools">
+					<button id="MainNotekeeper" getSize="vbArcRibbon_getSize" getLabel="vbArcRibbon_getLabel" image="notes" onAction="vbArcRibbon_ButtonAction" getScreentip="vbArcRibbon_getScreenTip" getSupertip="vbArcRibbon_getSuperTip"/>
+					<button id="MainMouseRecorder" getSize="vbArcRibbon_getSize" getLabel="vbArcRibbon_getLabel" image="mouse" onAction="vbArcRibbon_ButtonAction" getScreentip="vbArcRibbon_getScreenTip" getSupertip="vbArcRibbon_getSuperTip"/>
+					<separator id="MainSeparator2"/>
+					<button id="MainRangeManager" getSize="vbArcRibbon_getSize" getLabel="vbArcRibbon_getLabel" image="table" onAction="vbArcRibbon_ButtonAction" getScreentip="vbArcRibbon_getScreenTip" getSupertip="vbArcRibbon_getSuperTip"/>
+					<button id="MainImageManager" getSize="vbArcRibbon_getSize" getLabel="vbArcRibbon_getLabel" image="image" onAction="vbArcRibbon_ButtonAction" getScreentip="vbArcRibbon_getScreenTip" getSupertip="vbArcRibbon_getSuperTip"/>
+					<button id="MainFileManager" getSize="vbArcRibbon_getSize" getLabel="vbArcRibbon_getLabel" image="fifo" onAction="vbArcRibbon_ButtonAction" getScreentip="vbArcRibbon_getScreenTip" getSupertip="vbArcRibbon_getSuperTip"/>
+					<button id="MainSessionManager" getSize="vbArcRibbon_getSize" getLabel="vbArcRibbon_getLabel" image="session" onAction="vbArcRibbon_ButtonAction" getScreentip="vbArcRibbon_getScreenTip" getSupertip="vbArcRibbon_getSuperTip"/>
+				</group>
+				<!-- Here i will add some placeholders and dynamic menus -->
+				<group id="G1" getLabel="vbArcRibbon_getLabel" getVisible="vbArcRibbon_getVisible">
+					<button id="G1_B1" getVisible="vbArcRibbon_getVisible" getSize="vbArcRibbon_getSize" getLabel="vbArcRibbon_getLabel" getImage="vbArcRibbon_getImage" onAction="vbArcRibbon_ButtonAction" getScreentip="vbArcRibbon_getScreenTip" getSupertip="vbArcRibbon_getSuperTip"/>
+					<button id="G1_B2" getVisible="vbArcRibbon_getVisible" getSize="vbArcRibbon_getSize" getLabel="vbArcRibbon_getLabel" getImage="vbArcRibbon_getImage" onAction="vbArcRibbon_ButtonAction" getScreentip="vbArcRibbon_getScreenTip" getSupertip="vbArcRibbon_getSuperTip"/>
+					<button id="G1_B3" getVisible="vbArcRibbon_getVisible" getSize="vbArcRibbon_getSize" getLabel="vbArcRibbon_getLabel" getImage="vbArcRibbon_getImage" onAction="vbArcRibbon_ButtonAction" getScreentip="vbArcRibbon_getScreenTip" getSupertip="vbArcRibbon_getSuperTip"/>
+					<button id="G1_B4" getVisible="vbArcRibbon_getVisible" getSize="vbArcRibbon_getSize" getLabel="vbArcRibbon_getLabel" getImage="vbArcRibbon_getImage" onAction="vbArcRibbon_ButtonAction" getScreentip="vbArcRibbon_getScreenTip" getSupertip="vbArcRibbon_getSuperTip"/>
+					<button id="G1_B5" getVisible="vbArcRibbon_getVisible" getSize="vbArcRibbon_getSize" getLabel="vbArcRibbon_getLabel" getImage="vbArcRibbon_getImage" onAction="vbArcRibbon_ButtonAction" getScreentip="vbArcRibbon_getScreenTip" getSupertip="vbArcRibbon_getSuperTip"/>
+					<separator id="MainSeparator4"/>
+					<splitButton id="G1_S1" getSize="vbArcRibbon_getSize" getVisible="vbArcRibbon_getVisible">
+						<button id="G1_S1_B" getLabel="vbArcRibbon_getLabel" getImage="vbArcRibbon_getImage" onAction="vbArcRibbon_ButtonAction" getScreentip="vbArcRibbon_getScreenTip" getSupertip="vbArcRibbon_getSuperTip"/>
+						<menu id="G1_S1_M">
+							<button id="G1_S1_M1" getVisible="vbArcRibbon_getVisible" getLabel="vbArcRibbon_getLabel" getImage="vbArcRibbon_getImage" onAction="vbArcRibbon_ButtonAction" getScreentip="vbArcRibbon_getScreenTip" getSupertip="vbArcRibbon_getSuperTip"/>
+							<button id="G1_S1_M2" getVisible="vbArcRibbon_getVisible" getLabel="vbArcRibbon_getLabel" getImage="vbArcRibbon_getImage" onAction="vbArcRibbon_ButtonAction" getScreentip="vbArcRibbon_getScreenTip" getSupertip="vbArcRibbon_getSuperTip"/>
+							<button id="G1_S1_M3" getVisible="vbArcRibbon_getVisible" getLabel="vbArcRibbon_getLabel" getImage="vbArcRibbon_getImage" onAction="vbArcRibbon_ButtonAction" getScreentip="vbArcRibbon_getScreenTip" getSupertip="vbArcRibbon_getSuperTip"/>
+							<button id="G1_S1_M4" getVisible="vbArcRibbon_getVisible" getLabel="vbArcRibbon_getLabel" getImage="vbArcRibbon_getImage" onAction="vbArcRibbon_ButtonAction" getScreentip="vbArcRibbon_getScreenTip" getSupertip="vbArcRibbon_getSuperTip"/>
+							<button id="G1_S1_M5" getLabel="vbArcRibbon_getLabel" getImage="vbArcRibbon_getImage" onAction="vbArcRibbon_ButtonAction" getScreentip="vbArcRibbon_getScreenTip" getSupertip="vbArcRibbon_getSuperTip"/>
+							<button id="G1_S1_M6" getVisible="vbArcRibbon_getVisible" getLabel="vbArcRibbon_getLabel" getImage="vbArcRibbon_getImage" onAction="vbArcRibbon_ButtonAction" getScreentip="vbArcRibbon_getScreenTip" getSupertip="vbArcRibbon_getSuperTip"/>
+							<button id="G1_S1_M7" getVisible="vbArcRibbon_getVisible" getLabel="vbArcRibbon_getLabel" getImage="vbArcRibbon_getImage" onAction="vbArcRibbon_ButtonAction" getScreentip="vbArcRibbon_getScreenTip" getSupertip="vbArcRibbon_getSuperTip"/>
+							<button id="G1_S1_M8" getVisible="vbArcRibbon_getVisible" getLabel="vbArcRibbon_getLabel" getImage="vbArcRibbon_getImage" onAction="vbArcRibbon_ButtonAction" getScreentip="vbArcRibbon_getScreenTip" getSupertip="vbArcRibbon_getSuperTip"/>
+							<button id="G1_S1_M9" getVisible="vbArcRibbon_getVisible" getLabel="vbArcRibbon_getLabel" getImage="vbArcRibbon_getImage" onAction="vbArcRibbon_ButtonAction" getScreentip="vbArcRibbon_getScreenTip" getSupertip="vbArcRibbon_getSuperTip"/>
+							<button id="G1_S1_M10" getVisible="vbArcRibbon_getVisible" getLabel="vbArcRibbon_getLabel" getImage="vbArcRibbon_getImage" onAction="vbArcRibbon_ButtonAction" getScreentip="vbArcRibbon_getScreenTip" getSupertip="vbArcRibbon_getSuperTip"/>
+						</menu>
+					</splitButton>
+					<splitButton id="G1_S2" getSize="vbArcRibbon_getSize" getVisible="vbArcRibbon_getVisible">
+						<button id="G1_S2_B" getLabel="vbArcRibbon_getLabel" getImage="vbArcRibbon_getImage" onAction="vbArcRibbon_ButtonAction" getScreentip="vbArcRibbon_getScreenTip" getSupertip="vbArcRibbon_getSuperTip"/>
+						<menu id="G1_S2_M">
+							<button id="G1_S2_M1" getVisible="vbArcRibbon_getVisible" getLabel="vbArcRibbon_getLabel" getImage="vbArcRibbon_getImage" onAction="vbArcRibbon_ButtonAction" getScreentip="vbArcRibbon_getScreenTip" getSupertip="vbArcRibbon_getSuperTip"/>
+							<button id="G1_S2_M2" getVisible="vbArcRibbon_getVisible" getLabel="vbArcRibbon_getLabel" getImage="vbArcRibbon_getImage" onAction="vbArcRibbon_ButtonAction" getScreentip="vbArcRibbon_getScreenTip" getSupertip="vbArcRibbon_getSuperTip"/>
+							<button id="G1_S2_M3" getVisible="vbArcRibbon_getVisible" getLabel="vbArcRibbon_getLabel" getImage="vbArcRibbon_getImage" onAction="vbArcRibbon_ButtonAction" getScreentip="vbArcRibbon_getScreenTip" getSupertip="vbArcRibbon_getSuperTip"/>
+							<button id="G1_S2_M4" getVisible="vbArcRibbon_getVisible" getLabel="vbArcRibbon_getLabel" getImage="vbArcRibbon_getImage" onAction="vbArcRibbon_ButtonAction" getScreentip="vbArcRibbon_getScreenTip" getSupertip="vbArcRibbon_getSuperTip"/>
+							<button id="G1_S2_M5" getVisible="vbArcRibbon_getVisible" getLabel="vbArcRibbon_getLabel" getImage="vbArcRibbon_getImage" onAction="vbArcRibbon_ButtonAction" getScreentip="vbArcRibbon_getScreenTip" getSupertip="vbArcRibbon_getSuperTip"/>
+							<button id="G1_S2_M6" getVisible="vbArcRibbon_getVisible" getLabel="vbArcRibbon_getLabel" getImage="vbArcRibbon_getImage" onAction="vbArcRibbon_ButtonAction" getScreentip="vbArcRibbon_getScreenTip" getSupertip="vbArcRibbon_getSuperTip"/>
+							<button id="G1_S2_M7" getVisible="vbArcRibbon_getVisible" getLabel="vbArcRibbon_getLabel" getImage="vbArcRibbon_getImage" onAction="vbArcRibbon_ButtonAction" getScreentip="vbArcRibbon_getScreenTip" getSupertip="vbArcRibbon_getSuperTip"/>
+							<button id="G1_S2_M8" getVisible="vbArcRibbon_getVisible" getLabel="vbArcRibbon_getLabel" getImage="vbArcRibbon_getImage" onAction="vbArcRibbon_ButtonAction" getScreentip="vbArcRibbon_getScreenTip" getSupertip="vbArcRibbon_getSuperTip"/>
+							<button id="G1_S2_M9" getVisible="vbArcRibbon_getVisible" getLabel="vbArcRibbon_getLabel" getImage="vbArcRibbon_getImage" onAction="vbArcRibbon_ButtonAction" getScreentip="vbArcRibbon_getScreenTip" getSupertip="vbArcRibbon_getSuperTip"/>
+							<button id="G1_S2_M10" getVisible="vbArcRibbon_getVisible" getLabel="vbArcRibbon_getLabel" getImage="vbArcRibbon_getImage" onAction="vbArcRibbon_ButtonAction" getScreentip="vbArcRibbon_getScreenTip" getSupertip="vbArcRibbon_getSuperTip"/>
+						</menu>
+					</splitButton>
+					<splitButton id="G1_S3" getSize="vbArcRibbon_getSize" getVisible="vbArcRibbon_getVisible">
+						<button id="G1_S3_B" getLabel="vbArcRibbon_getLabel" getImage="vbArcRibbon_getImage" onAction="vbArcRibbon_ButtonAction" getScreentip="vbArcRibbon_getScreenTip" getSupertip="vbArcRibbon_getSuperTip"/>
+						<menu id="G1_S3_M">
+							<button id="G1_S3_M1" getVisible="vbArcRibbon_getVisible" getLabel="vbArcRibbon_getLabel" getImage="vbArcRibbon_getImage" onAction="vbArcRibbon_ButtonAction" getScreentip="vbArcRibbon_getScreenTip" getSupertip="vbArcRibbon_getSuperTip"/>
+							<button id="G1_S3_M2" getVisible="vbArcRibbon_getVisible" getLabel="vbArcRibbon_getLabel" getImage="vbArcRibbon_getImage" onAction="vbArcRibbon_ButtonAction" getScreentip="vbArcRibbon_getScreenTip" getSupertip="vbArcRibbon_getSuperTip"/>
+							<button id="G1_S3_M3" getVisible="vbArcRibbon_getVisible" getLabel="vbArcRibbon_getLabel" getImage="vbArcRibbon_getImage" onAction="vbArcRibbon_ButtonAction" getScreentip="vbArcRibbon_getScreenTip" getSupertip="vbArcRibbon_getSuperTip"/>
+							<button id="G1_S3_M4" getVisible="vbArcRibbon_getVisible" getLabel="vbArcRibbon_getLabel" getImage="vbArcRibbon_getImage" onAction="vbArcRibbon_ButtonAction" getScreentip="vbArcRibbon_getScreenTip" getSupertip="vbArcRibbon_getSuperTip"/>
+							<button id="G1_S3_M5" getVisible="vbArcRibbon_getVisible" getLabel="vbArcRibbon_getLabel" getImage="vbArcRibbon_getImage" onAction="vbArcRibbon_ButtonAction" getScreentip="vbArcRibbon_getScreenTip" getSupertip="vbArcRibbon_getSuperTip"/>
+							<button id="G1_S3_M6" getVisible="vbArcRibbon_getVisible" getLabel="vbArcRibbon_getLabel" getImage="vbArcRibbon_getImage" onAction="vbArcRibbon_ButtonAction" getScreentip="vbArcRibbon_getScreenTip" getSupertip="vbArcRibbon_getSuperTip"/>
+							<button id="G1_S3_M7" getVisible="vbArcRibbon_getVisible" getLabel="vbArcRibbon_getLabel" getImage="vbArcRibbon_getImage" onAction="vbArcRibbon_ButtonAction" getScreentip="vbArcRibbon_getScreenTip" getSupertip="vbArcRibbon_getSuperTip"/>
+							<button id="G1_S3_M8" getVisible="vbArcRibbon_getVisible" getLabel="vbArcRibbon_getLabel" getImage="vbArcRibbon_getImage" onAction="vbArcRibbon_ButtonAction" getScreentip="vbArcRibbon_getScreenTip" getSupertip="vbArcRibbon_getSuperTip"/>
+							<button id="G1_S3_M9" getVisible="vbArcRibbon_getVisible" getLabel="vbArcRibbon_getLabel" getImage="vbArcRibbon_getImage" onAction="vbArcRibbon_ButtonAction" getScreentip="vbArcRibbon_getScreenTip" getSupertip="vbArcRibbon_getSuperTip"/>
+							<button id="G1_S3_M10" getVisible="vbArcRibbon_getVisible" getLabel="vbArcRibbon_getLabel" getImage="vbArcRibbon_getImage" onAction="vbArcRibbon_ButtonAction" getScreentip="vbArcRibbon_getScreenTip" getSupertip="vbArcRibbon_getSuperTip"/>
+						</menu>
+					</splitButton>
+					<splitButton id="G1_S4" getSize="vbArcRibbon_getSize" getVisible="vbArcRibbon_getVisible">
+						<button id="G1_S4_B" getLabel="vbArcRibbon_getLabel" getImage="vbArcRibbon_getImage" onAction="vbArcRibbon_ButtonAction" getScreentip="vbArcRibbon_getScreenTip" getSupertip="vbArcRibbon_getSuperTip"/>
+						<menu id="G1_S4_M">
+							<button id="G1_S4_M1" getVisible="vbArcRibbon_getVisible" getLabel="vbArcRibbon_getLabel" getImage="vbArcRibbon_getImage" onAction="vbArcRibbon_ButtonAction" getScreentip="vbArcRibbon_getScreenTip" getSupertip="vbArcRibbon_getSuperTip"/>
+							<button id="G1_S4_M2" getVisible="vbArcRibbon_getVisible" getLabel="vbArcRibbon_getLabel" getImage="vbArcRibbon_getImage" onAction="vbArcRibbon_ButtonAction" getScreentip="vbArcRibbon_getScreenTip" getSupertip="vbArcRibbon_getSuperTip"/>
+							<button id="G1_S4_M3" getVisible="vbArcRibbon_getVisible" getLabel="vbArcRibbon_getLabel" getImage="vbArcRibbon_getImage" onAction="vbArcRibbon_ButtonAction" getScreentip="vbArcRibbon_getScreenTip" getSupertip="vbArcRibbon_getSuperTip"/>
+							<button id="G1_S4_M4" getVisible="vbArcRibbon_getVisible" getLabel="vbArcRibbon_getLabel" getImage="vbArcRibbon_getImage" onAction="vbArcRibbon_ButtonAction" getScreentip="vbArcRibbon_getScreenTip" getSupertip="vbArcRibbon_getSuperTip"/>
+							<button id="G1_S4_M5" getVisible="vbArcRibbon_getVisible" getLabel="vbArcRibbon_getLabel" getImage="vbArcRibbon_getImage" onAction="vbArcRibbon_ButtonAction" getScreentip="vbArcRibbon_getScreenTip" getSupertip="vbArcRibbon_getSuperTip"/>
+							<button id="G1_S4_M6" getVisible="vbArcRibbon_getVisible" getLabel="vbArcRibbon_getLabel" getImage="vbArcRibbon_getImage" onAction="vbArcRibbon_ButtonAction" getScreentip="vbArcRibbon_getScreenTip" getSupertip="vbArcRibbon_getSuperTip"/>
+							<button id="G1_S4_M7" getVisible="vbArcRibbon_getVisible" getLabel="vbArcRibbon_getLabel" getImage="vbArcRibbon_getImage" onAction="vbArcRibbon_ButtonAction" getScreentip="vbArcRibbon_getScreenTip" getSupertip="vbArcRibbon_getSuperTip"/>
+							<button id="G1_S4_M8" getVisible="vbArcRibbon_getVisible" getLabel="vbArcRibbon_getLabel" getImage="vbArcRibbon_getImage" onAction="vbArcRibbon_ButtonAction" getScreentip="vbArcRibbon_getScreenTip" getSupertip="vbArcRibbon_getSuperTip"/>
+							<button id="G1_S4_M9" getVisible="vbArcRibbon_getVisible" getLabel="vbArcRibbon_getLabel" getImage="vbArcRibbon_getImage" onAction="vbArcRibbon_ButtonAction" getScreentip="vbArcRibbon_getScreenTip" getSupertip="vbArcRibbon_getSuperTip"/>
+							<button id="G1_S4_M10" getVisible="vbArcRibbon_getVisible" getLabel="vbArcRibbon_getLabel" getImage="vbArcRibbon_getImage" onAction="vbArcRibbon_ButtonAction" getScreentip="vbArcRibbon_getScreenTip" getSupertip="vbArcRibbon_getSuperTip"/>
+						</menu>
+					</splitButton>
+					<splitButton id="G1_S5" getSize="vbArcRibbon_getSize" getVisible="vbArcRibbon_getVisible">
+						<button id="G1_S5_B" getLabel="vbArcRibbon_getLabel" getImage="vbArcRibbon_getImage" onAction="vbArcRibbon_ButtonAction" getScreentip="vbArcRibbon_getScreenTip" getSupertip="vbArcRibbon_getSuperTip"/>
+						<menu id="G1_S5_M">
+							<button id="G1_S5_M1" getVisible="vbArcRibbon_getVisible" getLabel="vbArcRibbon_getLabel" getImage="vbArcRibbon_getImage" onAction="vbArcRibbon_ButtonAction" getScreentip="vbArcRibbon_getScreenTip" getSupertip="vbArcRibbon_getSuperTip"/>
+							<button id="G1_S5_M2" getVisible="vbArcRibbon_getVisible" getLabel="vbArcRibbon_getLabel" getImage="vbArcRibbon_getImage" onAction="vbArcRibbon_ButtonAction" getScreentip="vbArcRibbon_getScreenTip" getSupertip="vbArcRibbon_getSuperTip"/>
+							<button id="G1_S5_M3" getVisible="vbArcRibbon_getVisible" getLabel="vbArcRibbon_getLabel" getImage="vbArcRibbon_getImage" onAction="vbArcRibbon_ButtonAction" getScreentip="vbArcRibbon_getScreenTip" getSupertip="vbArcRibbon_getSuperTip"/>
+							<button id="G1_S5_M4" getVisible="vbArcRibbon_getVisible" getLabel="vbArcRibbon_getLabel" getImage="vbArcRibbon_getImage" onAction="vbArcRibbon_ButtonAction" getScreentip="vbArcRibbon_getScreenTip" getSupertip="vbArcRibbon_getSuperTip"/>
+							<button id="G1_S5_M5" getVisible="vbArcRibbon_getVisible" getLabel="vbArcRibbon_getLabel" getImage="vbArcRibbon_getImage" onAction="vbArcRibbon_ButtonAction" getScreentip="vbArcRibbon_getScreenTip" getSupertip="vbArcRibbon_getSuperTip"/>
+							<button id="G1_S5_M6" getVisible="vbArcRibbon_getVisible" getLabel="vbArcRibbon_getLabel" getImage="vbArcRibbon_getImage" onAction="vbArcRibbon_ButtonAction" getScreentip="vbArcRibbon_getScreenTip" getSupertip="vbArcRibbon_getSuperTip"/>
+							<button id="G1_S5_M7" getVisible="vbArcRibbon_getVisible" getLabel="vbArcRibbon_getLabel" getImage="vbArcRibbon_getImage" onAction="vbArcRibbon_ButtonAction" getScreentip="vbArcRibbon_getScreenTip" getSupertip="vbArcRibbon_getSuperTip"/>
+							<button id="G1_S5_M8" getVisible="vbArcRibbon_getVisible" getLabel="vbArcRibbon_getLabel" getImage="vbArcRibbon_getImage" onAction="vbArcRibbon_ButtonAction" getScreentip="vbArcRibbon_getScreenTip" getSupertip="vbArcRibbon_getSuperTip"/>
+							<button id="G1_S5_M9" getVisible="vbArcRibbon_getVisible" getLabel="vbArcRibbon_getLabel" getImage="vbArcRibbon_getImage" onAction="vbArcRibbon_ButtonAction" getScreentip="vbArcRibbon_getScreenTip" getSupertip="vbArcRibbon_getSuperTip"/>
+							<button id="G1_S5_M10" getVisible="vbArcRibbon_getVisible" getLabel="vbArcRibbon_getLabel" getImage="vbArcRibbon_getImage" onAction="vbArcRibbon_ButtonAction" getScreentip="vbArcRibbon_getScreenTip" getSupertip="vbArcRibbon_getSuperTip"/>
+						</menu>
+					</splitButton>
+				</group>
+			</tab>
+		</tabs>
+	</ribbon>
+</customUI>
