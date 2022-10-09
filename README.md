@@ -3,6 +3,7 @@ Feedback is highly appreciated, report those bugs, make suggestions and requests
 Check my other repositories [here](https://github.com/alexofrhodes/).  
 
 Disclaimer:  
+>* This is being developed on Office 2019  
 >* No guarantee is provided and no responsibility taken by the author if things don't work as expected or cause any sort of damage.  
   Always keep backups and read the code before you execute it.  
 >* The file is provided free of charge and the sourcecode is unlocked. Leave attributes as found. 
