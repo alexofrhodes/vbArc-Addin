@@ -1,5 +1,6 @@
 This is being developed on Office 2019  
-No liability. Always keep backups, read and test the code    
+No liability. Always keep backups, read and test the code  
+
 Author     : Anastasiou Alex  
 >Contact    : AnastasiouAlex@gmail.com  
 GITHUB     : https://github.com/AlexOfRhodes   
