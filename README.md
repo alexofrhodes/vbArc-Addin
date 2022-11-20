@@ -1,3 +1,5 @@
+Current version:  1.1.0  
+
 This is being developed on Office 2019  
 No liability. Always keep backups, read and test the code  
 
