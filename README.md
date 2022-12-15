@@ -4,9 +4,9 @@ This is being developed on Office 2019
 No liability. Always keep backups, read and test the code  
 
 Author     : Anastasiou Alex  
->Contact    : AnastasiouAlex@gmail.com  
-GITHUB     : https://github.com/AlexOfRhodes   
-YOUTUBE    : https://www.youtube.com/channel/UC5QH3fn1zjx0aUjRER_rOjg  
+> Email    : AnastasiouAlex@gmail.com  
+GitHub     : https://github.com/AlexOfRhodes   
+YouTube    : https://www.youtube.com/channel/UC5QH3fn1zjx0aUjRER_rOjg  
 VK         : https://vk.com/video/playlist/735281600_1  
   
   
