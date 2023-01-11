@@ -1,11 +1,16 @@
 Current version:  1.1.0  
 
+```
+This is my playground. I export complete projects to either vbArc-Addins or vbArc-StandAlone.
+```
+
 This is being developed on Office 2019  
 No liability. Always keep backups, read and test the code  
 
 Author     : Anastasiou Alex  
 > Email    : AnastasiouAlex@gmail.com  
-GitHub     : https://github.com/AlexOfRhodes   
+GitHub     : https://github.com/AlexOfRhodes  
+Blog       : https://alexofrhodes.github.io  
 YouTube    : https://www.youtube.com/channel/UC5QH3fn1zjx0aUjRER_rOjg  
 VK         : https://vk.com/video/playlist/735281600_1  
   
